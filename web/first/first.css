@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+    font-family: "Anton", Arial, sans-serif;
+    font-size: 100px;
+  }
+  
+  .container {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .shadows {
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: -15px 5px 20px #212122;
+    color: black;
+    letter-spacing: -0.05em;
+
+    transition: all 0.25s ease-out;
+ 
+  }
+  
+  .shadows:hover {
+    text-shadow: -16px 6px 15px #f80404;
+  }
+  .waviy {
+    position: relative;
+    
+  }
+  .waviy span {
+    color: black;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+    
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
